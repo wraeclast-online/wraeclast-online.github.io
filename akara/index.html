@@ -20,77 +20,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Akara's Gem Store</title>
-    <style>
-        #wrapper {
-          margin-left: 200px;
-        }
-        #content {
-          float: right;
-          width: 100%;
-          background-color: #CCF;
-        }
-        #sidebar {
-          float: left;
-          width: 200px;
-          margin-left: -200px;
-          background-color: #FFA;
-        }
-        #cleared {
-          clear: both;
-        }
-
-        #myInput {
-          background-image: url('searchicon.png');
-          background-position: 10px 12px;
-          background-repeat: no-repeat;
-          width: 100%;
-          font-size: 12px;
-          padding: 12px 20px 12px 40px;
-          border: 1px solid #ddd;
-          margin-bottom: 12px;
-        }
-
-        #myUL {
-          list-style-type: none;
-          padding: 0;
-          margin: 0;
-        }
-
-        #myUL li a {
-          border: 1px solid #ddd;
-          margin-top: -1px; /* Prevent double borders */
-          background-color: #f6f6f6;
-          padding: 4px;
-          text-decoration: none;
-          font-size: 10px;
-          color: black;
-          display: block
-        }
-
-        #myUL li a.header {
-          background-color: #e2e2e2;
-          cursor: default;
-        }
-
-        #myUL li a:hover:not(.header) {
-          background-color: #eee;
-        }
-        table {
-            font-family: arial, sans-serif;
-            border-collapse: collapse;
-            font-size: 10px;
-        }
-
-        td, th {
-            border: 1px solid #dddddd;
-            text-align: left;
-            padding: 2px;
-        }
-
-        tr:nth-child(even) {
-            background-color: #dddddd;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <script
             src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
             integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc="
@@ -118,7 +48,7 @@
         function onJavaLoadSucceed(myBridge) {
           if (myBridge) {
             bridge = myBridge;
-            myBridge.setSize(950, 546);
+            myBridge.setSize(608, 446);
           }
         }
         function doSearch() {
@@ -168,7 +98,7 @@
 <body>
     <div id="wrapper">
         <div id="sidebar">
-            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Filter by name" title="Type in a name">
 
             <ul id="myUL">
                 <!--<li><a href="#" class="header">A</a></li>-->

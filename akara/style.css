@@ -1,3 +1,86 @@
-.root {
-    -fx-background-image: url("bg1.png");
-}
+        body {
+          background-image: url('bg.png');
+          background-repeat: no-repeat;
+          overflow: hidden;
+        }
+
+        #wrapper {
+          margin-left: 180px;
+        }
+        #content {
+          float: right;
+          width: 100%;
+          color: #a38d6d;
+          margin-top: 24px;
+          overflow: auto;
+          max-height: 390px;
+        }
+        #sidebar {
+          float: left;
+          width: 152px;
+          margin-left: -170px;
+          margin-top: 24px;
+          max-height: 390px;
+          overflow: auto;
+          background-color: transparent;
+        }
+        #cleared {
+          clear: both;
+        }
+
+        #myInput {
+          //background-image: url('searchicon.png');
+          //background-position: 10px 12px;
+          //background-repeat: no-repeat;
+          //font-size: 12px;
+          //padding: 12px 20px 12px 40px;
+          border: 1px solid #ddd;
+          margin-bottom: 4px;
+        }
+
+        #myUL {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          margin-left: 2px;
+        }
+
+        #myUL li a {
+          border: 1px solid #ddd;
+          margin-top: -1px; /* Prevent double borders */
+          background-color: #f6f6f6;
+          padding: 4px;
+          text-decoration: none;
+          font-size: 12px;
+          color: black;
+          display: block
+        }
+
+        #myUL li a.header {
+          background-color: #e2e2e2;
+          cursor: default;
+        }
+
+        #myUL li a:hover:not(.header) {
+          background-color: #eee;
+        }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            font-size: 12px;
+            
+        }
+        
+        th {
+            color: #DFCF99;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 2px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #0c0b0b;
+        }
